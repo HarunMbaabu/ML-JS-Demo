@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rydlr Cloud Services </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	
+  </head>  
+  <body>
+
+    <div class="flexContainer">
+
+      <div class="sideNav">
+
+        <div class="side1">
+
+        </div>
+
+        <div class="side2">
+				
+        </div>
+
+        <p>Current playing AD</p>
+        <div class="side3">
+			<br>
+				
+				<video id="myVideo" width="334" height="190" muted autoplay loop controls>
+				  
+				</video>
+			
+			<p>Logic based on:</p> <p id="aiLogic"></p>
+			
+			
+			
+        </div>
+        
+      </div>
+
+      <div class="rightSide">
+
+        <div class="navBar">
+          <div class="searchContainer">
+            <img src="images/search-black-18dp.svg" alt="">
+          </div>
+          <ul class="menuBar">
+            <a href="" class="menuItem colorBlack"><li>Dashoard</li></a>
+            <a href="" class="menuItem colorGray"><li>Live</li></a>
+            <a href="" class="menuItem colorGray"><li>Video</li></a>
+            <a href="" class="menuItem colorGray"><li>Hosts</li></a>
+            <a href="" class="menuItem colorGray"><li>Chanels</li></a>
+          </ul>
+
+          <div class="rightMenu">
+            <img src="images/notification2.svg" class="notifications" alt="">
+            <img src="images/logo.png" class="logo" alt="">
+            <img src="images/menu.svg" class="menuLogo" alt="">
+          </div>
+          
+
+        </div>
+
+        <h3 class="liveText">Live Stream Feed</h3>
+
+        <div class="liveContainer">
+
+          <section id="demos" class="invisible">
+
+            <div id="liveView" class="camView">
+              <button id="webcamButton">Load Model</button>
+              <video id="webcam" autoplay width="640" height="480"></video>
+            </div>
+          </section>
+
+
+          <div class="liveRight">
+            <p class="liveP1">Video Feed Ananlysis</p>
+            <div></div>
+			<br>
+			<br>
+			
+			<p id="aiDemo"></p>
+			
+			<p id="vidColor">N/A</p>
+			<p id="vidMake">N/A</p>
+			<p id="vidModel">N/A</p>
+			
+
+          </div>
+
+        </div>
+
+        <div class="bottomDiv">
+        
+          <img src="images/profile.jpg" class="profileImage" alt="">
+          <div class="bootomDiv2">
+            <p><a>Location:</a>  Nairobi CBD</p>
+            <p><a>Average Traffic:</a>  4300 people per hour</p>
+          </div>
+          <div class="btnContainer">
+            <button class="analytBtn">View Analytics</button>
+        
+          </div>
+         
+         
+
+        </div>
+
+
+       
+
+      </div>
+
+      
+
+    </div>
+  
+
+    
+   
+
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
